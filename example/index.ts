@@ -47,11 +47,12 @@ async function runFeature(): Promise<boolean> {
   const supportCodeLibrary = await Cucumber.supportCodeLibraryBuilder.finalize()
 
   const formatterOptions = {
-    colorsEnabled: true,
     cwd: '/',
     eventBroadcaster,
     eventDataCollector,
-    parsedArgvOptions: {},
+    parsedArgvOptions: {
+      colorsEnabled: true,
+    },
     log(data) {
       appendToOutput(ansiHTML(data))
     },
