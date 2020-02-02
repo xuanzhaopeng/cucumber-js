@@ -1,9 +1,0 @@
-{
-  "extends": "./tsconfig.browser.json",
-  "include": [
-    "src/**/*.ts"
-  ], 
-  "exclude": [
-    "**/*_spec.ts"
-  ]
-}

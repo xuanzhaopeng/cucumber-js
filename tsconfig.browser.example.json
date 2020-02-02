@@ -1,6 +1,0 @@
-{
-  "extends": "./tsconfig.browser.json",
-  "include": [
-    "example/**/*.ts"
-  ]
-}
