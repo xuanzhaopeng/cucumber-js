@@ -271,6 +271,9 @@ export default class PickleRunner {
             attempt,
             testCaseId: this.testCaseId,
             id: this.currentTestCaseStartedId,
+            platform: {
+              cpu: process.env.CUCUMBER_SLAVE_ID || '-1'
+            }
           },
         })
       )
